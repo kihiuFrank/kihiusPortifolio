@@ -25,15 +25,15 @@ export default function FeaturedProjects() {
       </Container>
       <div className={css.bgContainer}>
         <span className={css.orbitalBg}>
-          <span class={`${css.bgSection}`}>
+          <span className={`${css.bgSection}`}>
             <span
               className={`${css.bgInner} ${css.heroLeft} ${css.heroOrbital}`}
             ></span>
           </span>
-          <span class={`${css.bgSection}`}>
+          <span className={`${css.bgSection}`}>
             <span className={`${css.bgInner} ${css.heroCenter}`}></span>
           </span>
-          <span class={`${css.bgSection}`}>
+          <span className={`${css.bgSection}`}>
             <span
               className={`${css.bgInner} ${css.heroRight} ${css.heroOrbital}`}
             ></span>

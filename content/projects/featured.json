@@ -1,10 +1,10 @@
 [
   {
-    "project": "My Supply Co.",
-    "url": "https://mysupplyco.com",
-    "repo": "Private",
-    "descriptionTitle": "D2C & B2B ecommerce site and blog",
-    "description": "with elegant solutions for a complex codebase and customer journey.",
+    "project": "Ninjalig Technologies.",
+    "url": "https://ninjaligtech.com",
+    "repo": "Public",
+    "descriptionTitle": "An IT solutions company",
+    "description": "tailored to meet the unique needs of each client by working closely with clients to identify their goals, challenges and opportunities.",
     "imageOptions": [],
     "images": [
       {
@@ -30,15 +30,10 @@
       }
     ],
     "stack": [
-      { "key": "php", "name": "PHP", "type": "devicon" },
-      { "key": "mysql", "name": "mySQL", "type": "devicon" },
+      { "key": "firebase", "name": "Firebase", "type": "devicon" },
       { "key": "javascript", "name": "JavaScript", "type": "devicon" },
-      { "key": "jquery", "name": "jQuery", "type": "devicon" },
-      { "key": "woocommerce", "name": "WooCommerce", "type": "devicon" },
-      { "key": "wordpress", "name": "Wordpress", "type": "devicon" },
-      { "key": "html5", "name": "HTML5", "type": "devicon" },
-      { "key": "css3", "name": "CSS3", "type": "devicon" },
-      { "key": "sass", "name": "SCSS", "type": "devicon" },
+      { "key": "typescript", "name": "TypeScript", "type": "devicon" },
+      { "key": "tailwindcss", "name": "TailWindCss", "type": "devicon" },
       { "key": "git", "name": "Git(Hub)", "type": "devicon" },
       { "key": "google", "name": "GA4/GTM/EEC", "type": "devicon" }
     ]

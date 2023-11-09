@@ -8,6 +8,12 @@ import Icon from "../../utils/icon.util";
 
 import css from "../../../styles/sections/projects/recent.module.scss";
 
+import {
+  FaArrowUpRightFromSquare,
+  FaStar,
+  FaCodeBranch,FaArrowRightToBracket
+} from "react-icons/fa6";
+
 export default function GitProjects({ repos, user }) {
   return (
     <Section classProp={css.section}>
@@ -21,38 +27,34 @@ export default function GitProjects({ repos, user }) {
             height={60}
             width={60}
           />
-          <span class={css.details}>
+          <span className={css.details}>
             <p>{user[0].name}</p>
             <a href={user[0].html_url} rel="noreferrer" target="_blank">
-              {user[0].html_url}{" "}
-              <Icon icon={["far", "arrow-up-right-from-square"]} />
+              {user[0].html_url} <FaArrowUpRightFromSquare />
             </a>
           </span>
         </section>
         <div className={css.projects}>
           {repos.map(
-            (
-              {
-                name,
-                description,
-                topics,
-                forks_count,
-                html_url,
-                language,
-                watchers,
-                homepage,
-                pushed_at,
-              },
-              index
-            ) => {
+            ({
+              id,
+              name,
+              description,
+              topics,
+              forks_count,
+              html_url,
+              language,
+              watchers,
+              homepage,
+              pushed_at,
+            }) => {
               const date = new Date(pushed_at).toDateString();
               return (
                 <>
-                  <article key={index} className={css.project}>
+                  <article key={id} className={css.project}>
                     <span className={css.header}>
                       <a href={html_url} rel="noreferrer" target="_blank">
-                        {name}{" "}
-                        <Icon icon={["fad", "arrow-up-right-from-square"]} />
+                        {name} <FaArrowUpRightFromSquare />
                       </a>
                       <p className={css.homepage}>{homepage}</p>
                     </span>
@@ -60,20 +62,27 @@ export default function GitProjects({ repos, user }) {
                       <p className={css.description}>{description}</p>
                     </span>
                     <span className={css.details}>
-                      {/* <p><i className={`devicon-${language.toLowerCase()}-plain colored`} /> {language}</p> */}
                       <p>
-                        <Icon icon={["fad", "star"]} /> {watchers}
+                        <i
+                          className={`devicon-${(
+                            language || ""
+                          ).toLowerCase()}-plain colored`}
+                        />{" "}
+                        {language}
                       </p>
-                      <p>
-                        <Icon icon={["fad", "code-branch"]} /> {forks_count}
-                      </p>
+                      <>
+                        <FaStar /> {watchers}
+                      </>
+                      <>
+                        <FaCodeBranch /> {forks_count}
+                      </>
                       <p className={css.pushedAt}>{date}</p>
                     </span>
                     <span className={css.topicsContainer}>
                       {topics.map((e, index) => {
                         return (
                           <span key={index} className={css.topics}>
-                            <i class="devicon-github-plain"></i> {e}
+                            <i className="devicon-github-plain"></i> {e}
                           </span>
                         );
                       })}

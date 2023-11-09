@@ -1,51 +1,66 @@
 {
-  "acknowledgments": [
+  "link": [
     {
-      "person": "Jihad Hassan - Marketing Director",
-      "link": "",
-      "note": "Thank you for all the advice and feedback."
+      "name": "Optimizing Smart Contracts Certification",
+      "link": "https://codedamn.com/certificate/verify/7825e39a9e6505d657a96f6bb1ece1df246000f8",
+      "note": ""
     },
     {
-      "person": "Colorpong - Artist",
-      "link": "ttps://www.youworkforthem.com/designer/536/colorpong?aff=1115",
-      "note": "Checkout their amazing vector illustrations."
+      "name": "Web3 and Blockchain Certification",
+      "link": "https://codedamn.com/certificate/verify/a80f9b376230b6bfdd325901e165e0674ce85dc8",
+      "note": ""
     },
     {
-      "person": "Brittany Chiang - Software Engineer",
-      "link": "https://brittanychiang.com/",
-      "note": "A major inspiration to create an open source theme."
+      "name": "Letter of Commendation ",
+      "link": "https://bit.ly/google-commendation",
+      "note": "Issued by: Developer Ecosystem Program Manager Sub-Saharan Africa, Google."
     },
     {
-      "person": "Vercel - Platform",
-      "link": "https://vercel.com/docs",
-      "note": "Host your own Next.js project for free!"
+      "name": "Letter of Commendation",
+      "link": "https://bit.ly/frank-commendation",
+      "note": "Issued By: Vice Chancellor, Meru University."
     }
   ],
 
   "links": [
     {
-      "person": "YWFT Creative Marketplace",
-      "link": "https://www.youworkforthem.com/?aff=1115",
-      "note": "Best in class creative assets."
+      "url": "/about",
+      "title": "About Me"
+    },
+    {
+      "url": "/case-studies",
+      "title": "Case Studies"
+    },
+    {
+      "url": "/articles",
+      "title": "Articles"
+    },
+    {
+      "url": "/projects",
+      "title": "Projects"
     }
   ],
 
   "social": [
     {
-      "url": "https://medium.com/@franklinekihiu",
-      "icon": "medium"
+      "url": "https://github.com/kihiuFrank",
+      "icon": "github"
     },
     {
-      "url": "https://dev.to/",
-      "icon": "dev"
+      "url": "https://twitter.com/frankline_kihiu",
+      "icon": "twitter"
     },
     {
       "url": "https://www.linkedin.com/in/frankline-m-kihiu/",
       "icon": "linkedin"
     },
     {
-      "url": "https://github.com/kihiuFrank",
-      "icon": "github"
+      "url": "https://medium.com/@franklinekihiu",
+      "icon": "medium"
+    },
+    {
+      "url": "https://dev.to/kihiufrank",
+      "icon": "dev"
     }
   ]
 }
