@@ -39,11 +39,11 @@
     ]
   },
   {
-    "project": "kihiu.com",
-    "url": "https://github.com/kihiuFrank",
+    "project": "SaveAKid Donations Platform",
+    "url": "https://save-a-kid.vercel.app/",
     "repo": "Public",
-    "descriptionTitle": "An open source portfolio",
-    "description": "built on Next.js and React. A fast and agile MERN stack single page application.",
+    "descriptionTitle": "Adonations platform",
+    "description": "aiming to provide support for children and young people each year in Kenya by creating a space where charity organizations and children homes are connected with donors from all over the world.",
     "imageOptions": [{ "key": "size", "value": "large" }],
     "images": [
       {
@@ -58,11 +58,14 @@
       { "key": "nextjs", "name": "Next.js", "type": "devicon" },
       { "key": "react", "name": "React", "type": "devicon" },
       { "key": "nodejs", "name": "Node.js", "type": "devicon" },
-      { "key": "mongodb", "name": "MongoDB", "type": "devicon" },
+      { "key": "mongodb", "name": "Hardhat", "type": "devicon" },
+      { "key": "solidity", "name": "Solidity", "type": "devicon" },
+      { "key": "solidity", "name": "Thirdweb", "type": "devicon" },
+      { "key": "ethers", "name": "Ethers", "type": "devicon" },
+      { "key": "mocha", "name": "Mocha Tests Framework", "type": "devicon" },
       { "key": "javascript", "name": "JavaScript", "type": "devicon" },
       { "key": "html5", "name": "HTML5", "type": "devicon" },
       { "key": "css3", "name": "CSS3", "type": "devicon" },
-      { "key": "sass", "name": "SCSS", "type": "devicon" },
       { "key": "git", "name": "Git(Hub)", "type": "devicon" }
     ]
   }

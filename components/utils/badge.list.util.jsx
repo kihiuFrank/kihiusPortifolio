@@ -82,22 +82,3 @@ export default function Badges({ list, block, color, fullContainer }) {
     </m.ul>
   );
 }
-
-function IconModule({ iconKey, iconType, color }) {
-  let colored = "colored";
-  if (color === false) {
-    colored = "";
-  }
-
-  switch (iconType) {
-    case "far":
-    case "fad":
-    case "fat":
-    case "fas":
-      return <Icon icon={[iconType, iconKey]} />;
-    case "devicon":
-      return <i className={`devicon-${iconKey}-plain ${colored}`} />;
-    default:
-      return "";
-  }
-}

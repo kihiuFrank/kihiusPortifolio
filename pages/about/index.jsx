@@ -33,21 +33,13 @@ export default function About() {
         <SectionTitle
           title="About Me"
           preTitle="Synopsis"
-          subTitle={[
-            [
-              "I design, build, test and deploy smart contracts with Solidity on EVM based blockchains to deliver secure, transparent and decentralized solutions compatible with your needs.",
-            ],
-            <br />,
-            <br />,
-            [
-              "I'm open to any collaboration in building DAPPs, auditing them for vulnerabilities and anything security-related.",
-            ],
-          ]}
+          subTitle="I design, build, test and deploy smart contracts with Solidity on EVM based blockchains to deliver secure, transparent and decentralized solutions compatible with your needs."
+          subTitle2="I'm open to any collaboration in building DAPPs, auditing them for vulnerabilities and anything security-related."
         />
         <section className={about.content}>
           <div className={about.image}>
             <img src="/img/family-photo.jpg" alt="Nelson family photo" />
-            {/* <Image src="/img/family-photo.jpg" width={600} height={800}/> */}
+            {/* <Image src="/img/family-photo.jpg" width={800} height={1000} /> */}
           </div>
           <div className={about.copy}>
             <BadgesBlock
@@ -64,27 +56,7 @@ export default function About() {
               title="Soft skills that pay the bills"
               containerClass={about.container}
               iconClass={about.icon}
-              copy={[
-                [
-                  "In addition to my design and technical expertise—I also do crypto-trading in several platforms like ",
-                  <a href="https://www.binance.com/en" target="_blank">
-                    Binance,{" "}
-                  </a>,
-                  <a href="https://www.bybit.com/en" target="_blank">
-                    Bybit,{" "}
-                  </a>,
-                  <a href="https://localcoinswap.com/" target="_blank">
-                    LocalCoinSwap,{" "}
-                  </a>,
-                  "and ",
-                  <a href="https://noones.com/" target="_blank">
-                    Noones{" "}
-                  </a>,
-                ],
-                [
-                  "just to name a few. I have been trading crypto since  and the journey has been nothing short of amazing Fun fact I decided to learn how to build Dapps after interacting with a few of them and seeing how life changing the ecosystem is I wanted to be part of the builders making it happen and also change someones life somewhere",
-                ],
-              ]}
+              copy="In addition to my design and technical expertise—I also do crypto-trading in several platforms like Binance, Bybit, LocalCoinSwap and Noones just to name a few. I have been trading crypto since  and the journey has been nothing short of amazing Fun fact I decided to learn how to build Dapps after interacting with a few of them and seeing how life changing the ecosystem is I wanted to be part of the builders making it happen and also change someones life somewhere"
             />
           </div>
         </section>

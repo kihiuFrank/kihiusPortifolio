@@ -9,13 +9,14 @@ import section from "../../styles/blocks/section.title.module.scss";
  * @param {string} * strings for header
  * @returns
  */
-export default function SectionTitle({ preTitle, title, subTitle }) {
+export default function SectionTitle({ preTitle, title, subTitle, subTitle2 }) {
   return (
     <>
       <div className={`${section.title}`}>
         <h4>{preTitle}</h4>
         <h2>{title}</h2>
         <p className="subtitle">{subTitle}</p>
+        <p className="subtitle">{subTitle2}</p>
       </div>
     </>
   );
