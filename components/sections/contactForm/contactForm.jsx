@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import Section from "../../structure/section";
 import Container from "../../structure/container";
 
@@ -11,6 +11,8 @@ import { FaTelegramPlane } from "react-icons/fa";
 
 import emailjs from "@emailjs/browser";
 
+import Image from "next/image";
+
 // Section scss
 import contact from "../../../styles/sections/index/contact.module.scss";
 
@@ -18,7 +20,10 @@ export default function ContactForm() {
   const router = useRouter();
   const form = useRef();
 
+  const [isLoading, setIsLoading] = useState(false);
+
   const sendEmail = (e) => {
+    setIsLoading(true);
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
     emailjs
@@ -31,10 +36,12 @@ export default function ContactForm() {
       .then(
         (result) => {
           // show the user a success message
+
           alert("Form submitted successfully.");
 
           console.log("form submitted successfully", result.text);
 
+          setIsLoading(false);
           router.push("/");
         },
         (error) => {
@@ -86,7 +93,8 @@ export default function ContactForm() {
           />
         </div>
         <button id="btn" className={contact.button} type="submit">
-          {content.buttons.primary.title} <FaTelegramPlane />
+          {content.buttons.primary.title}
+          <FaTelegramPlane />
         </button>
       </form>
     </section>

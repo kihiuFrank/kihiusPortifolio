@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { TypeAnimation } from "react-type-animation";
 
 import Section from "../../structure/section";
@@ -28,9 +28,15 @@ import { useRouter } from "next/router";
 
 export default function Hero() {
   const router = useRouter();
+
   const [typingStatus, setTypingStatus] = useState("Initializing");
+
+  const [isLoading, setIsLoading] = useState(false);
+
   const handleNavigate = () => {
+    setIsLoading(true);
     router.push("/contact");
+    setIsLoading(false);
   };
 
   return (
