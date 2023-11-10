@@ -14,6 +14,7 @@ import button from "../../../styles/blocks/button.module.scss";
 import content from "../../../content/index/hero.json";
 
 import { BiDownload } from "react-icons/bi";
+import { useRouter } from "next/router";
 
 /**
  * TO DO LIST
@@ -26,7 +27,11 @@ import { BiDownload } from "react-icons/bi";
  */
 
 export default function Hero() {
+  const router = useRouter();
   const [typingStatus, setTypingStatus] = useState("Initializing");
+  const handleNavigate = () => {
+    router.push("/contact");
+  };
 
   return (
     <Section classProp={`${hero.section}`}>
@@ -75,9 +80,7 @@ export default function Hero() {
         <section>
           <button
             className={`button ${button.primary} leaveSite`}
-            onClick={() =>
-              (window.location = "mailto:franklinekihiu@gmail.com")
-            }
+            onClick={handleNavigate}
           >
             {content.buttons.primary.title}
           </button>

@@ -1,3 +1,4 @@
+import React, { useRef } from "react";
 import Section from "../../structure/section";
 import Container from "../../structure/container";
 
@@ -15,6 +16,8 @@ import contact from "../../../styles/sections/index/contact.module.scss";
 
 export default function ContactForm() {
   const router = useRouter();
+  const form = useRef();
+
   const sendEmail = (e) => {
     e.preventDefault(); // prevents the page from reloading when you hit “Send”
 
@@ -44,7 +47,7 @@ export default function ContactForm() {
   };
   return (
     <section className={contact.copy}>
-      <form onSubmit={sendEmail} className={contact.contactForm}>
+      <form ref={form} onSubmit={sendEmail} className={contact.contactForm}>
         <div className={contact.firstRow}>
           <input
             id="name"

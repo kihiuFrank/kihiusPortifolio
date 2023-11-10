@@ -235,6 +235,7 @@
     }
 
     .button {
+      margin: 1rem;
       background-color: var(--secondary);
       color: var(--background);
       font-family: "Quicksand", sans-serif;
@@ -253,6 +254,13 @@
       );
       background-size: 300% 100%;
       transition: all 0.3s ease-in-out;
+      width: fit-content;
+    }
+
+    .button:hover:enabled {
+      box-shadow: 0 0.5em 0.5em -0.4em #ff923cba;
+      background-size: 100% 100%;
+      transform: translateY(-0.15em);
     }
   }
 }
