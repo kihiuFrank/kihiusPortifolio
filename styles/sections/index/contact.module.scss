@@ -211,7 +211,10 @@
         margin-right: 4rem;
       }
     }
-
+    .inputs {
+      display: flex;
+      flex-direction: column;
+    }
     .contactForm textarea {
       width: 100%;
       resize: none;
@@ -232,6 +235,11 @@
 
     .contactForm .secondRow input {
       width: 48%;
+    }
+
+    .inputs {
+      display: flex;
+      flex-direction: column;
     }
 
     .button {

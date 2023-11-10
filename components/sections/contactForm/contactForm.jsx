@@ -15,6 +15,7 @@ import Image from "next/image";
 
 // Section scss
 import contact from "../../../styles/sections/index/contact.module.scss";
+import Spinner from "../spinner/Spinner";
 
 export default function ContactForm() {
   const router = useRouter();
@@ -41,8 +42,8 @@ export default function ContactForm() {
 
           console.log("form submitted successfully", result.text);
 
-          setIsLoading(false);
           router.push("/");
+          setIsLoading(false);
         },
         (error) => {
           // show the user an error
@@ -55,47 +56,52 @@ export default function ContactForm() {
   return (
     <section className={contact.copy}>
       <form ref={form} onSubmit={sendEmail} className={contact.contactForm}>
-        <div className={contact.firstRow}>
-          <input
-            id="name"
-            name="name"
-            type="text"
-            placeholder="Name"
-            required
-          />
-        </div>
+        {isLoading && <Spinner />}
+        <div className={contact.inputs}>
+          <div className={contact.firstRow}>
+            <input
+              id="name"
+              name="name"
+              type="text"
+              placeholder="Name"
+              required
+            />
+          </div>
 
-        <div className={contact.secondRow}>
-          <input
-            id="email"
-            name="email"
-            type="email"
-            placeholder="Email"
-            required
-          />
+          <div className={contact.secondRow}>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="Email"
+              required
+            />
 
-          <input
-            id="subject"
-            name="subject"
-            type="text"
-            placeholder="Subject"
-            required
-          />
-        </div>
+            <input
+              id="subject"
+              name="subject"
+              type="text"
+              placeholder="Subject"
+              required
+            />
+          </div>
 
-        <div className={contact.thirdRow}>
-          <textarea
-            id="message"
-            name="message"
-            rows="7"
-            placeholder="Message"
-            required
-          />
+          <div className={contact.thirdRow}>
+            <textarea
+              id="message"
+              name="message"
+              rows="7"
+              placeholder="Message"
+              required
+            />
+          </div>
         </div>
-        <button id="btn" className={contact.button} type="submit">
-          {content.buttons.primary.title}
-          <FaTelegramPlane />
-        </button>
+        <div className={contact.buttonDiv}>
+          <button id="btn" className={contact.button} type="submit">
+            {content.buttons.primary.title}
+            <FaTelegramPlane />
+          </button>
+        </div>
       </form>
     </section>
   );
