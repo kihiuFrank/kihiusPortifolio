@@ -6,14 +6,14 @@ import Container from "../../structure/container";
 
 import space from "../../utils/spacing.util";
 
-import Icon from "../../utils/icon.util";
-
 import HeroBg from "../../blocks/hero.bg/bg-color-1";
 
 import hero from "../../../styles/sections/index/hero.module.scss";
 import button from "../../../styles/blocks/button.module.scss";
 
 import content from "../../../content/index/hero.json";
+
+import { BiDownload } from "react-icons/bi";
 
 /**
  * TO DO LIST
@@ -74,23 +74,20 @@ export default function Hero() {
         </section>
         <section>
           <button
-            className={`button ${button.primary}`}
+            className={`button ${button.primary} leaveSite`}
             onClick={() =>
               (window.location = "mailto:franklinekihiu@gmail.com")
             }
           >
             {content.buttons.primary.title}
           </button>
-          <button
-            className={`button ${button.secondary} leaveSite`}
-            onClick={() =>
-              window.open(
-                "https://www.linkedin.com/in/frankline-m-kihiu/",
-                "_blank"
-              )
-            }
-          >
-            {content.buttons.secondary.title}
+          <button className={`button ${button.secondary} `}>
+            <a
+              href="/resume/Frankline_Kihiu_Resume.pdf"
+              download="Frankline_Kihiu_Resume"
+            >
+              {content.buttons.secondary.title} <BiDownload />
+            </a>
           </button>
         </section>
       </Container>

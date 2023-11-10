@@ -60,18 +60,31 @@
 
   .links {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 0 var(--size-1x);
+  }
+
+  .more {
+    display: flex;
     align-items: center;
     flex-direction: column;
   }
 
-  .links li {
+  .more li {
     display: flex;
   }
 
-  .links .footerLinks {
+  .more .footermore {
+    margin: 2rem;
     display: flex;
-    flex-direction: row;
-    gap: 1rem;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: var(--size-1x);
+    padding: 0 var(--size-1x);
   }
 
   .socialList {
@@ -141,6 +154,10 @@
 
       ul {
         width: 100% !important; // :nth-of-type specifity is bad
+      }
+
+      .footerLinks {
+        flex-direction: row;
       }
 
       .socialList {

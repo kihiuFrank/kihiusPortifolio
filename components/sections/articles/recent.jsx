@@ -8,6 +8,8 @@ import Icon from "../../utils/icon.util";
 
 import css from "../../../styles/sections/articles/recent.module.scss";
 
+import { FaArrowUpRightFromSquare, FaMedium } from "react-icons/fa6";
+
 export default function Recent({ mediumArticles }) {
   const feed = mediumArticles.feed;
   const articles = mediumArticles.items;
@@ -35,8 +37,7 @@ export default function Recent({ mediumArticles }) {
                     </span>
                     <span className={css.header}>
                       <a href={link} rel="noreferrer" target="_blank">
-                        {title}{" "}
-                        <Icon icon={["fad", "arrow-up-right-from-square"]} />
+                        {title} <FaArrowUpRightFromSquare />
                       </a>
                     </span>
                     <span className={css.descriptionContainer}></span>
@@ -48,7 +49,7 @@ export default function Recent({ mediumArticles }) {
                       {categories.map((e, index) => {
                         return (
                           <span key={index} className={css.topics}>
-                            <Icon icon={["fab", "medium"]} /> {e}
+                            <FaMedium /> {e}
                           </span>
                         );
                       })}

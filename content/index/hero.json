@@ -24,9 +24,9 @@
       "leaveSite": false
     },
     "secondary": {
-      "title": "LinkedIn",
+      "title": "Download Resume",
       "url": "",
-      "leaveSite": "true"
+      "leaveSite": false
     }
   }
 }

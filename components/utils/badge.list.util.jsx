@@ -74,7 +74,7 @@ export default function Badges({ list, block, color, fullContainer }) {
             //Animations
             variants={item}
           >
-            <LiaResearchgate color={color} />
+            <LiaResearchgate />
             <span className={badges.title}>{name}</span>
           </m.li>
         );
