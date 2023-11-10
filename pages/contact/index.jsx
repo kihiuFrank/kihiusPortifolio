@@ -90,12 +90,13 @@ export default function Contact() {
                 src="/img/contactPage.svg"
                 width={500}
                 height={500}
+                alt="mail image"
               />
             </div>
 
             <div className={contact.contactRight}>
               <p>
-                I'm always open to discussing product
+                I&apos;m always open to discussing product
                 <br />
                 <span>design work or partnerships.</span>
               </p>
