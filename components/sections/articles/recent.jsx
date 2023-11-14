@@ -30,32 +30,30 @@ export default function Recent({ mediumArticles }) {
             ) => {
               const date = new Date(pubDate).toDateString();
               return (
-                <>
-                  <article key={index} className={css.project}>
-                    <span className={css.featuredImage}>
-                      <img src={thumbnail} alt="Article thumbnail" />
-                    </span>
-                    <span className={css.header}>
-                      <a href={link} rel="noreferrer" target="_blank">
-                        {title} <FaArrowUpRightFromSquare />
-                      </a>
-                    </span>
-                    <span className={css.descriptionContainer}></span>
-                    <span className={css.details}>
-                      <p>By {author}</p>
-                      <p className={css.pushedAt}>{date}</p>
-                    </span>
-                    <span className={css.topicsContainer}>
-                      {categories.map((e, index) => {
-                        return (
-                          <span key={index} className={css.topics}>
-                            <FaMedium /> {e}
-                          </span>
-                        );
-                      })}
-                    </span>
-                  </article>
-                </>
+                <article key={index} className={css.project}>
+                  <span className={css.featuredImage}>
+                    <img src={thumbnail} alt="Article thumbnail" />
+                  </span>
+                  <span className={css.header}>
+                    <a href={link} rel="noreferrer" target="_blank">
+                      {title} <FaArrowUpRightFromSquare />
+                    </a>
+                  </span>
+                  <span className={css.descriptionContainer}></span>
+                  <span className={css.details}>
+                    <p>By {author}</p>
+                    <p className={css.pushedAt}>{date}</p>
+                  </span>
+                  <span className={css.topicsContainer}>
+                    {categories.map((e, index) => {
+                      return (
+                        <span key={index} className={css.topics}>
+                          <FaMedium /> {e}
+                        </span>
+                      );
+                    })}
+                  </span>
+                </article>
               );
             }
           )}

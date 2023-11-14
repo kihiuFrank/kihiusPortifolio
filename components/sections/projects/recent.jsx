@@ -11,7 +11,8 @@ import css from "../../../styles/sections/projects/recent.module.scss";
 import {
   FaArrowUpRightFromSquare,
   FaStar,
-  FaCodeBranch,FaArrowRightToBracket
+  FaCodeBranch,
+  FaArrowRightToBracket,
 } from "react-icons/fa6";
 
 export default function GitProjects({ repos, user }) {
@@ -50,45 +51,43 @@ export default function GitProjects({ repos, user }) {
             }) => {
               const date = new Date(pushed_at).toDateString();
               return (
-                <>
-                  <article key={id} className={css.project}>
-                    <span className={css.header}>
-                      <a href={html_url} rel="noreferrer" target="_blank">
-                        {name} <FaArrowUpRightFromSquare />
-                      </a>
-                      <p className={css.homepage}>{homepage}</p>
-                    </span>
-                    <span className={css.descriptionContainer}>
-                      <p className={css.description}>{description}</p>
-                    </span>
-                    <span className={css.details}>
-                      <p>
-                        <i
-                          className={`devicon-${(
-                            language || ""
-                          ).toLowerCase()}-plain colored`}
-                        />{" "}
-                        {language}
-                      </p>
-                      <>
-                        <FaStar /> {watchers}
-                      </>
-                      <>
-                        <FaCodeBranch /> {forks_count}
-                      </>
-                      <p className={css.pushedAt}>{date}</p>
-                    </span>
-                    <span className={css.topicsContainer}>
-                      {topics.map((e, index) => {
-                        return (
-                          <span key={index} className={css.topics}>
-                            <i className="devicon-github-plain"></i> {e}
-                          </span>
-                        );
-                      })}
-                    </span>
-                  </article>
-                </>
+                <article key={id} className={css.project}>
+                  <span className={css.header}>
+                    <a href={html_url} rel="noreferrer" target="_blank">
+                      {name} <FaArrowUpRightFromSquare />
+                    </a>
+                    <p className={css.homepage}>{homepage}</p>
+                  </span>
+                  <span className={css.descriptionContainer}>
+                    <p className={css.description}>{description}</p>
+                  </span>
+                  <span className={css.details}>
+                    <p>
+                      <i
+                        className={`devicon-${(
+                          language || ""
+                        ).toLowerCase()}-plain colored`}
+                      />{" "}
+                      {language}
+                    </p>
+                    <>
+                      <FaStar /> {watchers}
+                    </>
+                    <>
+                      <FaCodeBranch /> {forks_count}
+                    </>
+                    <p className={css.pushedAt}>{date}</p>
+                  </span>
+                  <span className={css.topicsContainer}>
+                    {topics.map((e, index) => {
+                      return (
+                        <span key={index} className={css.topics}>
+                          <i className="devicon-github-plain"></i> {e}
+                        </span>
+                      );
+                    })}
+                  </span>
+                </article>
               );
             }
           )}
