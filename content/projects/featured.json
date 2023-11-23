@@ -40,10 +40,10 @@
   },
   {
     "project": "SaveAKid Donations Platform",
-    "url": "https://save-a-kid.vercel.app/",
+    "url": "https://saveakid.online/",
     "repo": "Public",
     "descriptionTitle": "A donations platform",
-    "description": "aiming to provide support for children and young people each year in Kenya by creating a space where charity organizations and children homes are connected with donors from all over the world.",
+    "description": "aiming to provide support for children and young people each year in Africa by creating a space where charity organizations and children homes are connected with donors from all over the world.",
     "imageOptions": [{ "key": "size", "value": "large" }],
     "images": [
       {
