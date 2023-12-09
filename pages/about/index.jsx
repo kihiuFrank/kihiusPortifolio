@@ -56,7 +56,7 @@ export default function About() {
               title="Soft skills that pay the bills"
               containerClass={about.container}
               iconClass={about.icon}
-              copy="In addition to my design and technical expertise—I also do crypto-trading in several platforms like Binance, Bybit, LocalCoinSwap and Noones just to name a few. I have been trading crypto since  and the journey has been nothing short of amazing Fun fact I decided to learn how to build Dapps after interacting with a few of them and seeing how life changing the ecosystem is I wanted to be part of the builders making it happen and also change someones life somewhere"
+              copy="In addition to my technical expertise, I also do Crypto-Trading in several platforms like Binance, Bybit, LocalCoinSwap and Paxful just to name a few. I have been trading crypto for 4 years now and the journey has been nothing short of amazing. Fun fact, I decided to learn how to build Dapps after interacting with a few Dapps in the crypto space and saw how life changing the ecosystem is. I wanted to be part of the builders making it happen and also change someones life somewhere."
             />
           </div>
         </section>
