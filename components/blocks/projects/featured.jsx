@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 
 import { useEffect } from "react";
@@ -11,6 +12,8 @@ import css from "../../../styles/sections/projects/featured.module.scss";
 import content from "../../../content/projects/featured.json";
 
 import { FaArrowRightToBracket } from "react-icons/fa6";
+import Link from "next/link";
+import { useRouter } from "next/router";
 
 export default function FeaturedProject({ content }, index) {
   const {
@@ -29,6 +32,13 @@ export default function FeaturedProject({ content }, index) {
     threshold: 0.25,
     triggerOnce: false,
   });
+
+  const router = useRouter();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    router.push(url);
+  };
 
   useEffect(() => {
     if (inView) {
@@ -49,6 +59,7 @@ export default function FeaturedProject({ content }, index) {
       initial={["rest", "hidden"]}
       whileHover="hover"
       animate={controls}
+      onClick={handleClick}
     >
       <div className={css.details}>
         <div className={css.projectHeader}>
