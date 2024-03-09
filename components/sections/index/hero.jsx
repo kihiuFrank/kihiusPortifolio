@@ -91,13 +91,26 @@ export default function Hero() {
             {content.buttons.primary.title}
           </button>
           <button className={`button ${button.secondary} `}>
-            <a
+            {/* <a
               href="/resume/Frankline_Kihiu_Resume.pdf"
               download="Frankline_Kihiu_Resume"
             >
               {content.buttons.secondary.title} <BiDownload />
+            </a> */}
+
+            <a href="mailto:franklinekihiu@gmail.com" target="_blank">
+              {" "}
+              Request Resume
             </a>
           </button>
+
+          <p
+            className={`${hero.primaryBright} subtitle ${space([
+              "verticalLrg",
+            ])}`}
+          >
+            Or send an email to; franklinekihiu@gmail.com
+          </p>
         </section>
       </Container>
       <HeroBg theme="bg-color-1" />
