@@ -52,11 +52,23 @@ export default function About() {
               //invertedColor="invertedColor"
               headerIcon={`${about.icon}`}
             />
+
+            <div className={about.para}>
+              <h3>Soft skills that pay the bills</h3>
+            </div>
+
             <CopyBlock
-              title="Soft skills that pay the bills"
+              title="Crypto-Trading"
               containerClass={about.container}
               iconClass={about.icon}
-              copy="In addition to my technical expertise, I also do Crypto-Trading in several platforms like Binance, Bybit, LocalCoinSwap and Paxful just to name a few. I have been trading crypto for 4 years now and the journey has been nothing short of amazing. Fun fact, I decided to learn how to build Dapps after interacting with a few Dapps in the crypto space and saw how life changing the ecosystem is. I wanted to be part of the builders making it happen and also change someones life somewhere."
+              copy="In addition to my technical expertise, I also do Crypto-Trading in several platforms like Binance. I have been trading crypto for 4 years now and the journey has been nothing short of amazing. Fun fact, I decided to learn how to build Dapps after interacting with a few Dapps in the crypto space and saw how life changing the ecosystem is. I wanted to be part of the builders making it happen and also change someones life somewhere."
+            />
+
+            <CopyBlock
+              title="Entrepreneurship"
+              containerClass={about.container}
+              iconClass={about.icon}
+              copy="I also run businesses which include Ninja Supplies (a company that farms & suppliers farm produce), Mr Trendy (a men's luxury boutique) and NinjaLig Technologies which is both a tech solutions and a gaming company."
             />
           </div>
         </section>
