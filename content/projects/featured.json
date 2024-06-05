@@ -1,5 +1,31 @@
 [
   {
+    "project": "Mr Trendy",
+    "url": "https://mrtrendydesigns.com",
+    "repo": "Private",
+    "descriptionTitle": "A Men's Clothing Store Website",
+    "description": "👔 Mr. Trendy is a Luxury Men's Clothing. Experience the Ultimate Comfort and Sophistication in Our Exquisite Collection. Shop Now & Look Stunning!",
+    "imageOptions": [],
+    "images": [
+      {
+        "key": "portfolio",
+        "hover": "left",
+        "h": "797",
+        "w": "556",
+        "url": "/img/msc-mock_stack/trial8.png"
+      }
+    ],
+    "stack": [
+      { "key": "mongodb", "name": "MongoDb", "type": "devicon" },
+      { "key": "payload", "name": "Payload", "type": "devicon" },
+      { "key": "javascript", "name": "JavaScript", "type": "devicon" },
+      { "key": "typescript", "name": "TypeScript", "type": "devicon" },
+      { "key": "sass", "name": "Sass", "type": "devicon" },
+      { "key": "git", "name": "Git(Hub)", "type": "devicon" },
+      { "key": "google", "name": "GA4/GTM/EEC", "type": "devicon" }
+    ]
+  },
+  {
     "project": "Ninjalig Technologies.",
     "url": "https://ninjaligtech.com",
     "repo": "Public",

@@ -59,7 +59,8 @@ export default function FeaturedProject({ content }, index) {
       initial={["rest", "hidden"]}
       whileHover="hover"
       animate={controls}
-      onClick={handleClick}
+
+      //onClick={handleClick}
     >
       <div className={css.details}>
         <div className={css.projectHeader}>
