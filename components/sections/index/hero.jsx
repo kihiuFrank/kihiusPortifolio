@@ -98,9 +98,9 @@ export default function Hero() {
               {content.buttons.secondary.title} <BiDownload />
             </a> */}
 
-            <a href="mailto:franklinekihiu@gmail.com" target="_blank">
+            <a href="tel:+254726101804" target="_blank">
               {" "}
-              Request Resume
+              Call
             </a>
           </button>
 

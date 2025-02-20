@@ -33,8 +33,9 @@ export default function About() {
         <SectionTitle
           title="About Me"
           preTitle="Synopsis"
-          subTitle="I design, build, test and deploy smart contracts with Solidity on EVM based blockchains to deliver secure, transparent and decentralized solutions compatible with your needs."
-          subTitle2="I'm open to any collaboration in building DAPPs, auditing them for vulnerabilities and anything security-related."
+          subTitle="
+          With a strong background in technology and business strategy, I specialize in creating scalable, efficient, and results-driven solutions tailored to modern market demands. My journey is fueled by a commitment to problem-solving, innovation, and helping businesses navigate the ever-evolving digital landscape."
+          subTitle2="I'm open to any collaboration in building business solutions, leveraging technology and innovation to drive growth, efficiency, and long-term success."
         />
         <section className={about.content}>
           <div className={about.image}>
@@ -42,33 +43,33 @@ export default function About() {
             {/* <Image src="/img/family-photo.jpg" width={800} height={1000} /> */}
           </div>
           <div className={about.copy}>
+            <CopyBlock
+              title="Enterprenuership"
+              containerClass={about.container}
+              iconClass={about.icon}
+              copy="Entrepreneurship is about vision, resilience, and making an impact. I founded Ninjalig Technologies to empower businesses with digital solutions, launched Mr Trendy to share my passion for high quality fashion, and built Nextwave Gadgets to bring cutting-edge tech to Kenya, while embracing growth in farming. I give thanks to God Almighty for His wisdom and blessings."
+            />
+
             <BadgesBlock
-              title="Reasearch and planning"
+              title="Tech and Businesses"
               containerClass={about.container}
               list={methods}
               fullContainer="fullContainer"
               block="methods"
-              copy="One of my favorite aspects of creating is planning the architecture of a project. From Design Systems to Brand Strategy—I enjoy working with the many touch points of user experience."
+              copy="I leverage my tech expertise to build innovative solutions that optimize operations, boost growth, and solve challenges within my businesses and for my clients. Technology is the bridge that connects vision to execution, making entrepreneurship more dynamic and adaptable in today's digital world."
               //invertedColor="invertedColor"
               headerIcon={`${about.icon}`}
             />
 
-            <div className={about.para}>
+            {/* <div className={about.para}>
               <h3>Soft skills that pay the bills</h3>
-            </div>
+            </div> */}
 
             <CopyBlock
               title="Crypto-Trading"
               containerClass={about.container}
               iconClass={about.icon}
               copy="In addition to my technical expertise, I also do Crypto-Trading in several platforms like Binance. I have been trading crypto for 4 years now and the journey has been nothing short of amazing. Fun fact, I decided to learn how to build Dapps after interacting with a few Dapps in the crypto space and saw how life changing the ecosystem is. I wanted to be part of the builders making it happen and also change someones life somewhere."
-            />
-
-            <CopyBlock
-              title="Entrepreneurship"
-              containerClass={about.container}
-              iconClass={about.icon}
-              copy="I also run businesses which include Ninja Supplies (a company that farms & suppliers farm produce), Mr Trendy (a men's luxury boutique) and NinjaLig Technologies which is both a tech solutions and a gaming company."
             />
           </div>
         </section>

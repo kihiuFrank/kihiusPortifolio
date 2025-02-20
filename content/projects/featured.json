@@ -1,36 +1,10 @@
 [
   {
-    "project": "Mr Trendy",
-    "url": "https://mrtrendydesigns.com",
-    "repo": "Private",
-    "descriptionTitle": "A Men's Clothing Store Website",
-    "description": "👔 Mr. Trendy is a Luxury Men's Clothing. Experience the Ultimate Comfort and Sophistication in Our Exquisite Collection. Shop Now & Look Stunning!",
-    "imageOptions": [],
-    "images": [
-      {
-        "key": "portfolio",
-        "hover": "left",
-        "h": "797",
-        "w": "556",
-        "url": "/img/msc-mock_stack/trial8.png"
-      }
-    ],
-    "stack": [
-      { "key": "mongodb", "name": "MongoDb", "type": "devicon" },
-      { "key": "payload", "name": "Payload", "type": "devicon" },
-      { "key": "javascript", "name": "JavaScript", "type": "devicon" },
-      { "key": "typescript", "name": "TypeScript", "type": "devicon" },
-      { "key": "sass", "name": "Sass", "type": "devicon" },
-      { "key": "git", "name": "Git(Hub)", "type": "devicon" },
-      { "key": "google", "name": "GA4/GTM/EEC", "type": "devicon" }
-    ]
-  },
-  {
     "project": "Ninjalig Technologies.",
-    "url": "https://ninjaligtech.com",
+    "url": "https://ninjaligtechnologies.com",
     "repo": "Public",
-    "descriptionTitle": "An IT solutions company",
-    "description": "tailored to meet the unique needs of each client by working closely with clients to identify their goals, challenges and opportunities.",
+    "descriptionTitle": "The leading Marketing & Technology Company ",
+    "description": "in Kenya committed to helping businesses in Kenya thrive in the digital landscape.",
     "imageOptions": [],
     "images": [
       {
@@ -38,7 +12,7 @@
         "hover": "right",
         "h": "1200",
         "w": "556",
-        "url": "/img/msc-mock_stack/03.png"
+        "url": "/img/msc-mock_stack/ninjaligPhoneMock3.png"
       },
       {
         "key": "mock-stack",
@@ -52,22 +26,75 @@
         "hover": "left",
         "h": "1200",
         "w": "556",
-        "url": "/img/msc-mock_stack/01.png"
+        "url": "/img/msc-mock_stack/ninjaligPhoneMock1.png"
       }
     ],
     "stack": [
-      { "key": "firebase", "name": "Firebase", "type": "devicon" },
-      { "key": "javascript", "name": "JavaScript", "type": "devicon" },
-      { "key": "typescript", "name": "TypeScript", "type": "devicon" },
-      { "key": "tailwindcss", "name": "TailWindCss", "type": "devicon" },
-      { "key": "git", "name": "Git(Hub)", "type": "devicon" },
-      { "key": "google", "name": "GA4/GTM/EEC", "type": "devicon" }
+      { "key": "firebase", "name": "Marketing", "type": "devicon" },
+      { "key": "javascript", "name": "Technology", "type": "devicon" },
+      { "key": "typescript", "name": "Automation", "type": "devicon" },
+      { "key": "tailwindcss", "name": "SEO", "type": "devicon" },
+      { "key": "git", "name": "AI", "type": "devicon" },
+      { "key": "google", "name": "Email Marketing", "type": "devicon" }
+    ]
+  },
+  {
+    "project": "Mr Trendy",
+    "url": "https://mrtrendydesigns.com",
+    "repo": "Public",
+    "descriptionTitle": "A Men's Clothing Store Website",
+    "description": "👔 Mr. Trendy is a Luxury Men's Clothing. Experience the Ultimate Comfort and Sophistication in Our Exquisite Collection. Shop Now & Look Stunning!",
+    "imageOptions": [],
+    "images": [
+      {
+        "key": "portfolio",
+        "hover": "left",
+        "h": "797",
+        "w": "556",
+        "url": "/img/msc-mock_stack/mrTrendy.png"
+      }
+    ],
+    "stack": [
+      { "key": "mongodb", "name": "Watches", "type": "devicon" },
+      { "key": "payload", "name": "Pants", "type": "devicon" },
+      { "key": "javascript", "name": "Shoes", "type": "devicon" },
+      { "key": "typescript", "name": "Gifts", "type": "devicon" },
+      { "key": "sass", "name": "Accessories", "type": "devicon" },
+      { "key": "git", "name": "Nike", "type": "devicon" },
+      { "key": "google", "name": "Caps", "type": "devicon" }
+    ]
+  },
+  {
+    "project": "NextWave Gadgets",
+    "url": "https://nextwavegadgets.co.ke",
+    "repo": "Public",
+    "descriptionTitle": "A Gadgets Store Website",
+    "description": "offering a wide range of laptops, computers, accessories and other gadgets.",
+    "imageOptions": [],
+    "images": [
+      {
+        "key": "portfolio",
+        "hover": "left",
+        "h": "797",
+        "w": "556",
+        "url": "/img/msc-mock_stack/nextwaveGadgets.png"
+      }
+    ],
+    "stack": [
+      { "key": "mongodb", "name": "Laptops", "type": "devicon" },
+      { "key": "payload", "name": "Phones", "type": "devicon" },
+      { "key": "javascript", "name": "Cases", "type": "devicon" },
+      { "key": "typescript", "name": "Smartwatches", "type": "devicon" },
+      { "key": "sass", "name": "Cameras", "type": "devicon" },
+      { "key": "git", "name": "TVs", "type": "devicon" },
+      { "key": "git", "name": "Monitors", "type": "devicon" },
+      { "key": "google", "name": "Headphones", "type": "devicon" }
     ]
   },
   {
     "project": "SaveAKid Donations Platform",
-    "url": "https://saveakid.online/",
-    "repo": "Public",
+    "url": "https://save-a-kid.vercel.app/",
+    "repo": "Private",
     "descriptionTitle": "A donations platform",
     "description": "aiming to provide support for children and young people each year in Africa by creating a space where charity organizations and children homes are connected with donors from all over the world.",
     "imageOptions": [{ "key": "size", "value": "large" }],
